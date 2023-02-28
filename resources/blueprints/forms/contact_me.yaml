@@ -1,0 +1,96 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Name | Firma'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: telefon
+        field:
+          input_type: text
+          antlers: false
+          display: Telefon
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: adresse
+        field:
+          input_type: text
+          antlers: false
+          display: Adresse
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: plz_ort
+        field:
+          input_type: text
+          antlers: false
+          display: 'PLZ / Ort'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: kommentar
+        field:
+          antlers: false
+          display: 'Bitte Komentar eingeben'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: services_needed
+        field:
+          inline: false
+          options:
+            Preise: null
+            Offerte: null
+            Abholung: null
+            Anderes: null
+          display: Tema
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        
+        {{site_colors:font_urls}}
+        
+        <link rel="preconnect" href="{{font_url}}">
+        {{/site_colors:font_urls}}
+
+
+        {{site_colors:site_color_fonts_header}}
+
+        
+         
+        
+        <link rel="stylesheet" href="/one_page_portfolio/css/site.css">
+    </head>
+    <body>
+       
+            {{ template_content }}
+        
+        
+        <script src="/one_page_portfolio/js/jquery.min.js"></script>
+        <script src="/one_page_portfolio/js/bootstrap.min.js"></script>
+        <script src="/one_page_portfolio/js/jquery.sticky.js"></script>
+        <script src="/one_page_portfolio/js/click-scroll.js"></script>
+        <script src="/one_page_portfolio/js/jquery.magnific-popup.min.js"></script>
+        <script src="/one_page_portfolio/js/magnific-popup-options.js"></script>
+        <script src="/one_page_portfolio/js/custom.js"></script>
+        
+        
+        
+    </body>
+</html>

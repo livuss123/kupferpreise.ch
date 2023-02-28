@@ -1,0 +1,123 @@
+title: Offerteformular
+fields:
+  -
+    handle: offerteformular_titel
+    field:
+      input_type: text
+      antlers: false
+      display: 'Offerteformular Titel'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: assets_offerteformular
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Assets Offerteformular'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: offerte_textarea
+    field:
+      antlers: false
+      display: 'Offerte Textarea'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: offerte_sektion_template
+    field:
+      antlers: true
+      default: |-
+        <!-- OFFERTEFORMULAR <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+        	<h6>Offerte für Altmetall</h6>                            
+        	                            
+        	                        
+        	                                                   
+                                    {{ form:offerte class="custom-form contact-form" }}
+                                    <div class="row">
+        	                            
+        	                           
+        	                            
+        	                            {{ fields }}
+        	                            
+        <!-- SELECT-->	                                
+        	                         {{if type == "select"}}                         
+        	                         <div class="col-lg-6 col-md-6 col-12">
+                                                    <div class="form-floating">
+                                                        <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
+                                                        
+                                                        <label for="floatingInput">{{display}}</label>
+                                                    </div>
+                                                </div>
+                                                {{/if}}
+        <!-- ende SELECT -->
+        <!-- TEXT-->	                           	                           
+        	                         {{if type == "text"}}
+        	                         <div class="col-lg-6 col-md-6 col-12">
+                                                    <div class="form-floating">
+                                                        <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
+                                                        
+                                                        <label for="floatingInput">{{display}}</label>
+                                                    </div>
+                                                </div>
+                                                {{/if}}
+         <!-- ende TEXT-->   
+
+        <!-- email -->   
+        	                         {{if type == "email"}}
+        	                         
+        	                         
+        	                         <div class="col-lg-6 col-md-6 col-12">
+                                                    <div class="form-floating">
+                                                        <input type="text" name="{{metallschrott}}" id="{{metallschrott}}" class="form-control" placeholder="Name" required="">
+                                                        
+                                                        <label for="floatingInput">{{display}}</label>
+                                                    </div>
+                                                </div>
+                                                {{/if}}
+        <!-- ende email --> 
+        <!-- kommentar--> 
+        	                         {{if type == "textarea"}}
+        	                         
+        	                         
+        	                         <div class="col-lg-6 col-md-6 col-12">
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control" id="{{handle}}" name="{{handle}}" placeholder="{{display}}" required></textarea>
+                                                        
+                                                        <label for="floatingTextarea">{{display}}</label>
+                                                    </div>
+                                                </div>
+        	                         {{/if}}
+
+        <!-- ende kommentar--> 
+                                     
+                                      {{ /fields }}
+                                    </div>
+                                    
+                                     <input type="hidden" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                                     <div class="col-lg-3 col-12 ms-auto">
+                                                    <button type="submit" class="form-control">Send</button>
+                                                </div>
+                                    
+                                    {{ /form:offerte }}
+                                    
+                                    </div>
+        <!-- ENDE OFFERTEFORMULAR -->
+      display: 'Offerte Sektion Template'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible

@@ -1,0 +1,13 @@
+name: 'Ilija Juric'
+super: true
+id: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
+password_hash: $2y$10$i0BSfnnJhVwiIopI4fkqO.oTxbBfMb5zHk6wRzKcoEaH//61zP4dG
+preferences:
+  forms:
+    contact_me:
+      columns:
+        - datestamp
+        - name
+        - plz_ort
+        - email
+        - services_needed

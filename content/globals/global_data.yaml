@@ -1,0 +1,76 @@
+title: 'Global Data'
+data:
+  logo_text: kupferpreise
+  phone_number: '079 560 40 99'
+  services:
+    -
+      id: legtvblo
+      service_name: 'Kupfer Millberry'
+    -
+      id: legtw997
+      service_name: 'Kupfer neu'
+    -
+      id: TfBYGrJp
+      service_name: Altkupfer
+    -
+      id: NGuvIcB3
+      service_name: Kabel
+    -
+      id: kvVPEuPK
+      service_name: Messing
+    -
+      id: leg6oshh
+      service_name: Bronze
+    -
+      id: leg6p0ev
+      service_name: Zinn
+    -
+      id: leg6p61y
+      service_name: Blei
+    -
+      id: leg6pfby
+      service_name: Edelstahl
+    -
+      id: leg6pmgu
+      service_name: Aluminium
+    -
+      id: leg6pt06
+      service_name: Katalysatoren
+    -
+      id: legtx4je
+      service_name: Altmetall
+  social_links:
+    -
+      id: 7PnOgA46
+      social_media_name: Impressum
+      link_field: 'http://www.twitter.com'
+      icon_class: bi-twitter
+      social_media_url: 'https://livuss.ch/agb/'
+      unsere_daten_text: Impressum
+    -
+      id: klVbr77l
+      social_media_name: AGB
+      link_field: 'http://www.instagram.com'
+      icon_class: bi-instagram
+      social_media_url: 'https://livuss.ch/agb/'
+      unsere_daten_text: AGB
+    -
+      id: VZwUY2TS
+      social_media_name: Datenschutz
+      link_field: 'http://www.pinterest.com'
+      icon_class: bi-pinterest
+      social_media_url: 'https://livuss.ch/datenschutz/'
+      unsere_daten_text: Datenschutz
+    -
+      id: 21KTg4wl
+      social_media_name: Cookie
+      link_field: 'http://www.youtube.com'
+      icon_class: bi-youtube
+      social_media_url: 'https://livuss.ch/cookie/'
+      unsere_daten_text: Cookie
+  about_text: 'Altmetall entsorgen'
+  about_description: 'Livuss GmbH ist ein Abnehmer für Buntmetalle wie Kupfer, Kabel, Messing... inklusive Abholung'
+  email_address: info@kupferpreise.ch
+  telefon_title: 'Kontakt mit Altmetallhändelr'
+  logo_title: 'Altmetallhändler | Schrotthändler'
+  cooki_text: '<b>Cooki Erklärung</b> | Wir verwenden Cookies, um zu verstehen, wie Menschen unsere Website nutzen. Durch die Nutzung unserer Website erklären Sie sich mit der Verwendung von Cookies einverstanden. Weitere Informationen finden Sie in unsere <a href="https://livuss.ch/cookie/" target="_blank">Datenschutzbestimmungen</a>.'

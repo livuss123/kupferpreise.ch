@@ -1,0 +1,162 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
+        handle: sections
+        field:
+          antlers: true
+          default: |-
+            {{hero_section_antlr}}
+            {{information_section_template}}
+            {{story_section_antlr}}
+            {{companies_worked_section}}
+            {{service_template_section}}
+            {{project_section_template}}
+          display: Sections
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  home_hero:
+    display: Hero
+    fields:
+      -
+        import: home_hero
+  offerte:
+    display: Offerte
+    fields:
+      -
+        import: my_story
+  information:
+    display: Information
+    fields:
+      -
+        import: information
+      -
+        handle: firmainfo_text
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: 'Firmainfo Text'
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: firmainfo_titel
+        field:
+          input_type: text
+          antlers: false
+          display: 'Firmainfo Titel'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  company_logos:
+    display: Company
+    fields:
+      -
+        import: companies_worked
+      -
+        handle: company_text_area
+        field:
+          antlers: false
+          display: 'Company Text Area'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  metalle:
+    display: Metalle
+    fields:
+      -
+        import: services
+      -
+        handle: metalle_text
+        field:
+          antlers: false
+          display: 'Metalle Text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: metalle_titel
+        field:
+          input_type: text
+          antlers: false
+          display: 'Metalle Titel'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  service:
+    display: Service
+    fields:
+      -
+        import: projects
+      -
+        handle: service_text
+        field:
+          antlers: false
+          display: 'Service Text'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  offerteform:
+    display: Offerteform
+    fields:
+      -
+        import: offerteformular

@@ -1,0 +1,148 @@
+title: Offerte
+fields:
+  -
+    handle: story_big_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Offerte Big Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: story_heading
+    field:
+      input_type: text
+      antlers: false
+      display: 'Offerte Heading'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: story_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Offerte Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: my_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Offerte Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: my_story_text
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      smartypants: false
+      antlers: false
+      display: 'Offerte Text'
+      type: markdown
+      icon: markdown
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: story_section_antlr
+    field:
+      antlers: true
+      default: |-
+        <section class="about section-padding" id="section_2">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-12">
+        	                        
+        	                        
+        	                        {{ assets:story_big_image }}
+                                    <img src="{{url}}" class="about-image img-fluid" alt="">
+                                    {{ /assets:story_big_image }}
+                                </div>
+
+                                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                                    <div class="about-thumb">
+
+                                        <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+                                            <h2 class="text-white me-4 mb-0">{{story_heading}}</h2>
+                                             {{ assets:my_image }}
+
+                                            <img src="{{url}}" class="avatar-image img-fluid" alt="">
+                                             {{ /assets:my_image }}
+                                        </div>
+        </div>
+        </div>
+                                        <h3 class="pt-2 mb-3">{{story_title}}</h3>
+        {{ form:offerte }}
+         
+            // First let's check if this is after a submission, and if so, was it successful.
+            // If it was, just show the success message. After all, we don't want them submitting again once they've gotten in touch!
+            {{ if success }}
+                <div class="bg-green-300 text-white p-2">
+                    {{ success }}
+                </div>
+            {{ else }}
+                // If we weren't successful, show any errors. If a fresh page load, there's no errors, so do nothing.
+                {{ if errors }}
+                    <div class="bg-red-300 text-white p-2">
+                        {{ errors }}
+                            {{ value }}<br>
+                        {{ /errors }}
+                    </div>
+                {{ /if }}
+         
+                //Durchlaufen Sie die Formulareingaben und rendern Sie sie
+                {{ fields }}
+                    <div class="p-2">
+                        <label>{{ display }}</label>
+                        <div class="p-1">{{ field }}</div>
+                        {{ if error }}
+                            <p class="text-gray-500">{{ error }}</p>
+                        {{ /if }}
+                    </div>
+                {{ /fields }}
+         
+                // Add the honeypot field
+                <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+         
+                // This is just a submit button.
+                <button type="submit">Submit</button>
+            {{ /if }}
+         
+        {{ /form:super_fans }}
+             <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                                        <p>{{my_story_text}}</p>
+                                    </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+      display: 'Offerte Section'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
