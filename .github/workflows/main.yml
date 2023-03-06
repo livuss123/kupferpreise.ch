@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.217.26.54.101
-        username: info@kupferpreise.ch
+        username: ${{ secrets.ftp_name }}
         password: ${{ secrets.ftp_password }}
         server_dir: /home/efarinit/www/kupferpreise.ch
