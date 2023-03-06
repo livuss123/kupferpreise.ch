@@ -17,3 +17,4 @@ jobs:
         server: ftp.217.26.54.101
         username: info@kupferpreise.ch
         password: ${{ secrets.ftp_password }}
+        server_dir: /home/efarinit/www/kupferpreise.ch
