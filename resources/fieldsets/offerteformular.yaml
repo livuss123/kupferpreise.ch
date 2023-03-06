@@ -40,31 +40,27 @@ fields:
     field:
       antlers: true
       default: |-
-        <!-- OFFERTEFORMULAR <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-        	<h6>Offerte für Altmetall</h6>                            
+        <!-- KONTAKTFORMULAR -->
+        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+        	<h6>Kontaktieren Sie mit uns</h6>                            
         	                            
         	                        
         	                                                   
-                                    {{ form:offerte class="custom-form contact-form" }}
+                                    {{ form:contact_offerte class="custom-form contact-form" }}
                                     <div class="row">
         	                            
         	                           
         	                            
         	                            {{ fields }}
         	                            
-        <!-- SELECT-->	                                
-        	                         {{if type == "select"}}                         
-        	                         <div class="col-lg-6 col-md-6 col-12">
-                                                    <div class="form-floating">
-                                                        <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
-                                                        
-                                                        <label for="floatingInput">{{display}}</label>
-                                                    </div>
-                                                </div>
-                                                {{/if}}
-        <!-- ende SELECT -->
-        <!-- TEXT-->	                           	                           
+        	                            
+        	                           	                           
+        	                            
+        	                            
         	                         {{if type == "text"}}
+        	                         
+
+        	                         
         	                         <div class="col-lg-6 col-md-6 col-12">
                                                     <div class="form-floating">
                                                         <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
@@ -73,22 +69,17 @@ fields:
                                                     </div>
                                                 </div>
                                                 {{/if}}
-         <!-- ende TEXT-->   
-
-        <!-- email -->   
         	                         {{if type == "email"}}
         	                         
         	                         
         	                         <div class="col-lg-6 col-md-6 col-12">
                                                     <div class="form-floating">
-                                                        <input type="text" name="{{metallschrott}}" id="{{metallschrott}}" class="form-control" placeholder="Name" required="">
+                                                        <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
                                                         
                                                         <label for="floatingInput">{{display}}</label>
                                                     </div>
                                                 </div>
                                                 {{/if}}
-        <!-- ende email --> 
-        <!-- kommentar--> 
         	                         {{if type == "textarea"}}
         	                         
         	                         
@@ -100,8 +91,50 @@ fields:
                                                     </div>
                                                 </div>
         	                         {{/if}}
+        	                         {{if type == "checkboxes"}}
+        	                         
+        	 <div class="clearfix"></div>                        
+        	                         
+        	                          <div class="col-lg-3 col-md-6 col-6">
+                                                    <div class="form-check form-check-inline">
+                                                        <input name="{{handle}}[]" type="checkbox" class="form-check-input" id="inlineCheckbox1" value="Preise">
 
-        <!-- ende kommentar--> 
+                                                        <label class="form-check-label" for="inlineCheckbox1">
+                                                            <span class="form-check-label-text">Preise</span>
+                                                        </label>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-6 col-6">
+                                                    <div class="form-check form-check-inline">
+                                                        <input name="{{handle}}[]" type="checkbox" class="form-check-input" id="inlineCheckbox2" value="Offerte">
+
+                                                        <label class="form-check-label" for="inlineCheckbox2">
+                                                            <span class="form-check-label-text">Offerte</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-6 col-6">
+                                                    <div class="form-check form-check-inline">
+                                                        <input name="{{handle}}[]" type="checkbox" class="form-check-input" id="inlineCheckbox3" value="Abholung">
+
+                                                        <label class="form-check-label" for="inlineCheckbox3">
+                                                            <span class="form-check-label-text">Abholung</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-6 col-6">
+                                                    <div class="form-check form-check-inline me-0">
+                                                        <input name="{{handle}}[]" type="checkbox" class="form-check-input" id="inlineCheckbox4" value="Anderes">
+
+                                                        <label class="form-check-label" for="inlineCheckbox4">
+                                                            <span class="form-check-label-text">Anderes</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+        	                         {{/if}}
                                      
                                       {{ /fields }}
                                     </div>
@@ -111,10 +144,10 @@ fields:
                                                     <button type="submit" class="form-control">Send</button>
                                                 </div>
                                     
-                                    {{ /form:offerte }}
+                                    {{ /form:contact_offerte }}
                                     
                                     </div>
-        <!-- ENDE OFFERTEFORMULAR -->
+        <!-- ENDE KONTAKTFORMULAR -->
       display: 'Offerte Sektion Template'
       type: textarea
       icon: textarea
