@@ -1,4 +1,4 @@
 <html><body>
-    {{resources:views:layout.antlers.html}}
+    {{resources:views:layout.antlers}}
 </body>
 </html>
