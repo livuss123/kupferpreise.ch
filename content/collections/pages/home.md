@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1677618061
+updated_at: 1678311201
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -503,7 +503,7 @@ services_offered:
     id: bRXcOico
     service_title: Kabel
     service_price: '$1,000'
-    service_text: 'Kupferpreise Kabel wird nach Kupfer Anteil berechnet und dazu eine Kabel Preis pro Kilo vereinbart. Kabel muss frei vom Stecker, Eisen und Fett.'
+    service_text: 'Kupferpreise Kabel wird nach Kupfer Anteil berechnet und dazu eine Kabel Preis pro Kilo vereinbart. Kabel muss frei vom Stecker.'
     service_link: 'https://livuss.ch/kabel-entsorgen/'
     link_text: 'Kabel entsorgen'
     service_icon: globe
