@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678553705
+updated_at: 1678572441
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -140,6 +140,7 @@ story_section_antlr: |-
   <!-- metallschrott -->	                                
   	                                       
   	                         <div class="col-lg-10 col-md-10 col-12">
+     <div class="form-floating" style="margin:5px;">
   <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
   <select size="1" class="form-control" id="" name="metallschrott">
   <option selected value="check">Kupferart ausw&auml;hlen!</option>
@@ -169,11 +170,12 @@ story_section_antlr: |-
   <option value="Beschreibung">nach Beschreibung</option>
   </select>
    <label for="floatingInput">Metallart</label>
-                                              </div>
+                                            </div>  </div>
                                           
   <!-- ende metallschrott -->
   <!-- menge -->	                           	                           
   	                          <div class="col-lg-10 col-md-10 col-12">
+     <div class="form-floating" style="margin:5px;">
             <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
   <select size="1" class="form-control"  name="menge">
   <option selected value="check">Menge ausw&auml;hlen!</option>
@@ -188,11 +190,11 @@ story_section_antlr: |-
   <option value="Beschreibung">nach Beschreibung</option>
   </select>
   <label for="floatingInput">Menge</label>
-     </div>
+     </div></div>
                                         
    <!-- ende menge-->   
   <input type="hidden" class="hidden" name="">
-                               <div class="col-lg-3 col-12 ms-auto">
+                               <div class="col-10 ">
                                               <button type="submit" class="form-control" style="background: #D77924;
       border-radius: var(--border-radius-large);font-size:120%;
       color: var(--white-color);
