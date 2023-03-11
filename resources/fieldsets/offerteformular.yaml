@@ -26,17 +26,17 @@ fields:
       instructions_position: above
       visibility: visible
   -
-    handle: offerte_textarea
+    handle: offerteformular_textarea
     field:
       antlers: false
-      display: 'Offerte Textarea'
+      display: 'Offerteformular Textarea'
       type: textarea
       icon: textarea
       listable: hidden
       instructions_position: above
       visibility: visible
   -
-    handle: offerte_sektion_template
+    handle: offerteformular_sektion_template
     field:
       antlers: true
       default: |-
@@ -115,7 +115,7 @@ fields:
                                     
                                     </div>
         <!-- ENDE OFFERTEFORMULAR -->
-      display: 'Offerte Sektion Template'
+      display: 'Offerteformular Sektion Template'
       type: textarea
       icon: textarea
       listable: hidden

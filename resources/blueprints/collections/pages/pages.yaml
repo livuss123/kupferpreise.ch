@@ -155,8 +155,8 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
-  offerteform:
-    display: Offerteform
+  offerteformular:
+    display: Offerteformular
     fields:
       -
         import: offerteformular
