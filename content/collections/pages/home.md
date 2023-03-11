@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678311201
+updated_at: 1678553209
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -95,8 +95,7 @@ story_section_antlr: |-
   	                        
   	                                                   
                                                          <div class="row">
-  	                             {{forms:offerte1}}  
-  <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+  	                        <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
   function FrontPage_Form1_Validator(theForm)
   {
 
@@ -140,8 +139,7 @@ story_section_antlr: |-
   	                    	                            
   <!-- metallschrott -->	                                
   	                                       
-  	                         <div class="col-lg-6 col-md-6 col-12">
-                                              <div class="form-floating" style="margin:5px;">
+  	                         <div class="col-lg-10 col-md-10 col-12">
   <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
   <select size="1" class="form-control" id="" name="metallschrott">
   <option selected value="check">Kupferart ausw&auml;hlen!</option>
@@ -172,13 +170,11 @@ story_section_antlr: |-
   </select>
    <label for="floatingInput">Metallart</label>
                                               </div>
-                                          </div>
                                           
   <!-- ende metallschrott -->
   <!-- menge -->	                           	                           
-  	                          <div class="col-lg-6 col-md-6 col-12">
-                                              <div class="form-floating" style="margin:5px;">
-  <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
+  	                          <div class="col-lg-10 col-md-10 col-12">
+            <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
   <select size="1" class="form-control"  name="menge">
   <option selected value="check">Menge ausw&auml;hlen!</option>
   <option value="50-100kg">50 - 100 kg</option>
@@ -192,8 +188,7 @@ story_section_antlr: |-
   <option value="Beschreibung">nach Beschreibung</option>
   </select>
   <label for="floatingInput">Menge</label>
-             </div>
-    </div>
+     </div>
                                         
    <!-- ende menge-->   
 
@@ -934,4 +929,80 @@ offerte_textarea: |-
   Sie können zwischen zwei Transporten für Ihr Altmetall wählen:<br>
   1. Abholung - Paletten mit SBB-Rahmen, Box oder lose Ladung (Fahrzeug ist mit Hebebühne ausgerüstet)<br>
   2. selbst Anlieferung
+offerteformular_sektion_template: |-
+  <!-- OFFERTEFORMULAR <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+  	<h6>Offerte für Altmetall</h6>                            
+  	                            
+  	                        
+  	                                                   
+                              {{ form:offerte class="custom-form contact-form" }}
+                              <div class="row">
+  	                            
+  	                           
+  	                            
+  	                            {{ fields }}
+  	                            
+  <!-- SELECT-->	                                
+  	                         {{if type == "select"}}                         
+  	                         <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-floating">
+                                                  <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
+                                                  
+                                                  <label for="floatingInput">{{display}}</label>
+                                              </div>
+                                          </div>
+                                          {{/if}}
+  <!-- ende SELECT -->
+  <!-- TEXT-->	                           	                           
+  	                         {{if type == "text"}}
+  	                         <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-floating">
+                                                  <input type="text" name="{{handle}}" id="{{handle}}" class="form-control" placeholder="Name" required="">
+                                                  
+                                                  <label for="floatingInput">{{display}}</label>
+                                              </div>
+                                          </div>
+                                          {{/if}}
+   <!-- ende TEXT-->   
+
+  <!-- email -->   
+  	                         {{if type == "email"}}
+  	                         
+  	                         
+  	                         <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-floating">
+                                                  <input type="text" name="{{metallschrott}}" id="{{metallschrott}}" class="form-control" placeholder="Name" required="">
+                                                  
+                                                  <label for="floatingInput">{{display}}</label>
+                                              </div>
+                                          </div>
+                                          {{/if}}
+  <!-- ende email --> 
+  <!-- kommentar--> 
+  	                         {{if type == "textarea"}}
+  	                         
+  	                         
+  	                         <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-floating">
+                                                  <textarea class="form-control" id="{{handle}}" name="{{handle}}" placeholder="{{display}}" required></textarea>
+                                                  
+                                                  <label for="floatingTextarea">{{display}}</label>
+                                              </div>
+                                          </div>
+  	                         {{/if}}
+
+  <!-- ende kommentar--> 
+                               
+                                {{ /fields }}
+                              </div>
+                              
+                               <input type="hidden" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                               <div class="col-lg-3 col-12 ms-auto">
+                                              <button type="submit" class="form-control">Send</button>
+                                          </div>
+                              
+                              {{ /form:offerte }}
+                              
+                              </div>
+  <!-- ENDE OFFERTEFORMULAR -->
 ---
