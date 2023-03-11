@@ -39,25 +39,26 @@ data:
     -
       id: legtx4je
       service_name: Altmetall
+  
   social_links:
     -
       id: 7PnOgA46
       social_media_name: Impressum
-      link_field: 'http://www.twitter.com'
+      link_field: ''https://livuss.ch/impressum/'
       icon_class: bi-twitter
-      social_media_url: 'https://livuss.ch/agb/'
+      social_media_url: 'https://livuss.ch/impressum/'
       unsere_daten_text: Impressum
     -
       id: klVbr77l
       social_media_name: AGB
-      link_field: 'http://www.instagram.com'
+      link_field: 'https://livuss.ch/agb/'
       icon_class: bi-instagram
       social_media_url: 'https://livuss.ch/agb/'
       unsere_daten_text: AGB
     -
       id: VZwUY2TS
       social_media_name: Datenschutz
-      link_field: 'http://www.pinterest.com'
+      link_field: 'https://livuss.ch/datenschutz/'
       icon_class: bi-pinterest
       social_media_url: 'https://livuss.ch/datenschutz/'
       unsere_daten_text: Datenschutz
