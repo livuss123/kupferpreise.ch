@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678572441
+updated_at: 1678573907
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -453,7 +453,10 @@ service_template_section: |-
                                           <a href="{{service_link}}" class="custom-btn custom-border-btn btn mt-3" title="{{service_text}}">{{link_text}}</a>
 
                                           <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-                                              <!--<i class="services-icon bi-{{service_icon}}"></i>-->
+      {{assets:metalle_foto}}                                      
+  <img src="{{url}}" class="metalle-image img-fluid" alt="{{section_title}}">
+   {{/assets:metalle_foto}}
+    <!--<i class="services-icon bi-{{service_icon}}"></i>-->
                                           </div>
                                       </div>
                                   </div>
@@ -480,6 +483,8 @@ services_offered:
     service_link: 'https://livuss.ch/kupfer-millberry/'
     link_text: 'Millberry Kupfer'
     service_icon: globe
+    metalle_foto:
+      - kupfer-millberry-1678573104.jpg
   -
     id: 6rAugZJG
     service_title: 'Kupfer blank'
@@ -488,6 +493,8 @@ services_offered:
     service_link: 'https://livuss.ch/kupfer-ankauf/'
     link_text: 'Kupfer verkaufen'
     service_icon: globe
+    metalle_foto:
+      - kupferblech-1678573852.jpg
   -
     id: ZD5bttRu
     service_title: Altkupfer
@@ -496,6 +503,8 @@ services_offered:
     link_text: 'Altkupfer Preise'
     service_icon: globe
     service_link: 'https://livuss.ch/altkupferpreis-schweiz/'
+    metalle_foto:
+      - altkupfer_450-1678573873.jpg
   -
     id: bRXcOico
     service_title: Kabel
@@ -504,6 +513,8 @@ services_offered:
     service_link: 'https://livuss.ch/kabel-entsorgen/'
     link_text: 'Kabel entsorgen'
     service_icon: globe
+    metalle_foto:
+      - kupferkabel_450-1678573899.jpg
 project_section_heading: Service
 project_section_image:
   - kupfer-1-1677155361.jpg
