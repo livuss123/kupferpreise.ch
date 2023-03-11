@@ -101,6 +101,20 @@ fields:
             listable: hidden
             instructions_position: above
             visibility: visible
+        -
+          handle: metalle_foto
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: 'Metalle Foto'
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+            visibility: visible
       mode: stacked
       reorderable: true
       display: Metalle
@@ -146,6 +160,7 @@ fields:
                                                 <a href="{{service_link}}" class="custom-btn custom-border-btn btn mt-3">{{link_text}}</a>
 
                                                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+
                                                     <i class="services-icon bi-{{service_icon}}"></i>
                                                 </div>
                                             </div>
@@ -160,20 +175,6 @@ fields:
       display: 'Metalle Template Section'
       type: textarea
       icon: textarea
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-  -
-    handle: assets_metalle
-    field:
-      mode: list
-      container: assets
-      restrict: false
-      allow_uploads: true
-      show_filename: true
-      display: 'Assets Metalle'
-      type: assets
-      icon: assets
       listable: hidden
       instructions_position: above
       visibility: visible
