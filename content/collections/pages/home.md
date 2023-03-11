@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678311201
+updated_at: 1678483602
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -140,7 +140,7 @@ story_section_antlr: |-
   	                    	                            
   <!-- metallschrott -->	                                
   	                                       
-  	                         <div class="col-lg-6 col-md-6 col-12">
+  	                         <div class="col-lg-10 col-md-10 col-12">
                                               <div class="form-floating" style="margin:5px;">
   <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
   <select size="1" class="form-control" id="" name="metallschrott">
@@ -176,7 +176,7 @@ story_section_antlr: |-
                                           
   <!-- ende metallschrott -->
   <!-- menge -->	                           	                           
-  	                          <div class="col-lg-6 col-md-6 col-12">
+  	                          <div class="col-lg-10 col-md-10 col-12">
                                               <div class="form-floating" style="margin:5px;">
   <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
   <select size="1" class="form-control"  name="menge">
@@ -200,7 +200,7 @@ story_section_antlr: |-
                               </div>
                               
                                <input type="hidden" class="hidden" name="">
-                               <div class="col-lg-3 col-12 ms-auto">
+                               <div class="col-lg-10 col-md-10 col-12">
                                               <button type="submit" class="form-control" style="background: #D77924;
       border-radius: var(--border-radius-large);font-size:120%;
       color: var(--white-color);
@@ -431,7 +431,7 @@ service_template_section: |-
                           <div class="col-12 mx-auto">
                               <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
   	                         <h2 class="text-white me-4 mb-0">{{section_title}}</h2>
-     {{assets:section_image}}
+                               {{assets:section_image}}
                                   <img src="{{url}}" class="avatar-image img-fluid" alt="{{section_title}}">
                                  {{/assets:section_image}}
 
@@ -445,9 +445,12 @@ service_template_section: |-
                                           <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
                                               <h3 class="mb-0" title="{{service_title}}">{{service_title}}</h3>
 
+
                                               <!-- <div class="services-price-wrap ms-auto">
                                                   <p class="services-price-text mb-0">{{service_price}}</p>
-                                                  <div class="services-price-overlay"></div>
+                                                  <div class="services-price-overlay">
+  {{assets:metalle_foto}}
+  <img src="{{assets:metalle_foto}}" class="projects-image img-fluid" alt=""></div>
                                               </div> -->
                                           </div>
 
@@ -456,6 +459,9 @@ service_template_section: |-
                                           <a href="{{service_link}}" class="custom-btn custom-border-btn btn mt-3" title="{{service_text}}">{{link_text}}</a>
 
                                           <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+
+
+
                                               <!--<i class="services-icon bi-{{service_icon}}"></i>-->
                                           </div>
                                       </div>
@@ -468,6 +474,7 @@ service_template_section: |-
    <div class="container">
   <div class="row">
   <p>{{metalle_text}}</p>
+
   </div>
   </div>
    </section>
@@ -483,6 +490,8 @@ services_offered:
     service_link: 'https://livuss.ch/kupfer-millberry/'
     link_text: 'Millberry Kupfer'
     service_icon: globe
+    metalle_foto:
+      - kupfer-millberry-1678479132.jpg
   -
     id: 6rAugZJG
     service_title: 'Kupfer blank'
@@ -491,6 +500,8 @@ services_offered:
     service_link: 'https://livuss.ch/kupfer-ankauf/'
     link_text: 'Kupfer verkaufen'
     service_icon: globe
+    metalle_foto:
+      - kupferblech-1678479152.jpg
   -
     id: ZD5bttRu
     service_title: Altkupfer
@@ -499,6 +510,8 @@ services_offered:
     link_text: 'Altkupfer Preise'
     service_icon: globe
     service_link: 'https://livuss.ch/altkupferpreis-schweiz/'
+    metalle_foto:
+      - altkupfer-1678479176.jpg
   -
     id: bRXcOico
     service_title: Kabel
@@ -507,6 +520,8 @@ services_offered:
     service_link: 'https://livuss.ch/kabel-entsorgen/'
     link_text: 'Kabel entsorgen'
     service_icon: globe
+    metalle_foto:
+      - kupferkabel_450-1678479194.jpg
 project_section_heading: Service
 project_section_image:
   - kupfer-1-1677155361.jpg
