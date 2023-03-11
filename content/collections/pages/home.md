@@ -141,8 +141,7 @@ story_section_antlr: |-
   <!-- metallschrott -->	                                
   	                                       
   <div class="col-lg-10 col-md-10 col-12">
-    <!--<div class="form-floating" style="margin:5px;">-->
-      <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
+        <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
       <select size="1" class="form-control" id="" name="metallschrott">
       <option selected value="check">Kupferart ausw&auml;hlen!</option>
       <option value="Millberry">Kupfer, blank I, Millberry</option>
@@ -171,14 +170,12 @@ story_section_antlr: |-
       <option value="Beschreibung">nach Beschreibung</option>
       </select>
        <label for="floatingInput">Metallart</label>
-      <!--</div>-->
-  </div>
+    </div>
                                           
      <!-- ende metallschrott -->
      <!-- menge -->	                           	                           
   	<div class="col-lg-10 col-md-10 col-12">
-      <!--<div class="form-floating" style="margin:5px;">-->
-        <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
+         <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
         <select size="1" class="form-control"  name="menge">
         <option selected value="check">Menge ausw&auml;hlen!</option>
         <option value="50-100kg">50 - 100 kg</option>
@@ -192,8 +189,7 @@ story_section_antlr: |-
         <option value="Beschreibung">nach Beschreibung</option>
         </select>
         <label for="floatingInput">Menge</label>
-      <!--</div>-->
-    </div>
+      </div>
                                         
    <!-- ende menge-->   
       
