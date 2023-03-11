@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678483602
+updated_at: 1678311201
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -94,8 +94,8 @@ story_section_antlr: |-
   	                         
   	                        
   	                                                   
-    <div class="row">
-  	                          
+                                                         <div class="row">
+  	                             {{forms:offerte1}}  
   <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
   function FrontPage_Form1_Validator(theForm)
   {
@@ -140,84 +140,88 @@ story_section_antlr: |-
   	                    	                            
   <!-- metallschrott -->	                                
   	                                       
-  <div class="col-lg-10 col-md-10 col-12">
-        <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
-      <select size="1" class="form-control" id="" name="metallschrott">
-      <option selected value="check">Kupferart ausw&auml;hlen!</option>
-      <option value="Millberry">Kupfer, blank I, Millberry</option>
-      <option value="Elektrolyt ECU">Elektrilyt, blank (ECU)</option>
-      <option value="Kupfer neu">Kupferblech, blank II</option>
-      <option value="Oberleitungsdrath">Kupfer-Oberleitungsdraht</option>
-      <option value="Kupfer-98%">Kupfer 98%, Berry</option>
-      <option value="Sammelkupfer-95%">Sammelkupfer 95%</option>
-      <option value="Kupfer-verzinnt/vernickelt">Kupfer Ni/Si/Sn</option>
-      <option value="Kupfer-lackiert">Kupferdrath lackiert/Trafo</option>
-      <option value="Kupferspaene">Kupfersp&auml;ne sauber</option>
-      <option value="Kupfergranulat-1B">Kupfergranulat IB</option>
-      <option value="Kupfergranulat-2">Kupfergranulat II</option>
-      <option value="Kupfergranulat-3">Kupfergranulat III</option>
-      <option value="---">---------------------</option>
-      <option value="Kupferkabel-<40%">Kupferkabel < 40%</option>
-      <option value="Kupferkabel-40-44%">Kupferkabel 40-44%</option>
-      <option value="Kupferkabel-45-49%">Kupferkabel 45-49%</option>
-      <option value="Kupferkabel-50-54%">Kupferkabel 50-54%</option>
-      <option value="Kupferkabel-55-59%">Kupferkabel 55-59%</option>
-      <option value="Kupferkabel-60-64%">Kupferkabel 60-64%0</option>
-      <option value="Kupferkabel-65-69%">Kupferkabel 65-69%</option>
-      <option value="Kupferkabel-70-74%">Kupferkabel 70-74%</option>
-      <option value="Kupferkabel-75-80%">Kupferkabel 75-80%</option>
-      <option value="---">---------------------</option>
-      <option value="Beschreibung">nach Beschreibung</option>
-      </select>
-       <label for="floatingInput">Metallart</label>
-    </div>
+  	                         <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-floating" style="margin:5px;">
+  <!--webbot bot="Validation" S-Display-Name="Bitte Kupferart auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
+  <select size="1" class="form-control" id="" name="metallschrott">
+  <option selected value="check">Kupferart ausw&auml;hlen!</option>
+  <option value="Millberry">Kupfer, blank I, Millberry</option>
+  <option value="Elektrolyt ECU">Elektrilyt, blank (ECU)</option>
+  <option value="Kupfer neu">Kupferblech, blank II</option>
+  <option value="Oberleitungsdrath">Kupfer-Oberleitungsdraht</option>
+  <option value="Kupfer-98%">Kupfer 98%, Berry</option>
+  <option value="Sammelkupfer-95%">Sammelkupfer 95%</option>
+  <option value="Kupfer-verzinnt/vernickelt">Kupfer Ni/Si/Sn</option>
+  <option value="Kupfer-lackiert">Kupferdrath lackiert/Trafo</option>
+  <option value="Kupferspaene">Kupfersp&auml;ne sauber</option>
+  <option value="Kupfergranulat-1B">Kupfergranulat IB</option>
+  <option value="Kupfergranulat-2">Kupfergranulat II</option>
+  <option value="Kupfergranulat-3">Kupfergranulat III</option>
+  <option value="---">---------------------</option>
+  <option value="Kupferkabel-<40%">Kupferkabel < 40%</option>
+  <option value="Kupferkabel-40-44%">Kupferkabel 40-44%</option>
+  <option value="Kupferkabel-45-49%">Kupferkabel 45-49%</option>
+  <option value="Kupferkabel-50-54%">Kupferkabel 50-54%</option>
+  <option value="Kupferkabel-55-59%">Kupferkabel 55-59%</option>
+  <option value="Kupferkabel-60-64%">Kupferkabel 60-64%0</option>
+  <option value="Kupferkabel-65-69%">Kupferkabel 65-69%</option>
+  <option value="Kupferkabel-70-74%">Kupferkabel 70-74%</option>
+  <option value="Kupferkabel-75-80%">Kupferkabel 75-80%</option>
+  <option value="---">---------------------</option>
+  <option value="Beschreibung">nach Beschreibung</option>
+  </select>
+   <label for="floatingInput">Metallart</label>
+                                              </div>
+                                          </div>
                                           
-     <!-- ende metallschrott -->
-     <!-- menge -->	                           	                           
-  	<div class="col-lg-10 col-md-10 col-12">
-         <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
-        <select size="1" class="form-control"  name="menge">
-        <option selected value="check">Menge ausw&auml;hlen!</option>
-        <option value="50-100kg">50 - 100 kg</option>
-        <option value="100-200kg">101 - 200 kg</option>
-        <option value="200-300kg">201 - 300 kg</option>
-        <option value="300-400kg">301 - 400 kg</option>
-        <option value="400-500kg">400 - 500 kg</option>
-        <option value="500-1000kg">501 - 1000 kg</option>
-        <option value="> 1000kg">mehr als 1000 kg</option>
-        <option value="---">---------------</option>
-        <option value="Beschreibung">nach Beschreibung</option>
-        </select>
-        <label for="floatingInput">Menge</label>
-      </div>
+  <!-- ende metallschrott -->
+  <!-- menge -->	                           	                           
+  	                          <div class="col-lg-6 col-md-6 col-12">
+                                              <div class="form-floating" style="margin:5px;">
+  <!--webbot bot="Validation" S-Display-Name="Bitte Menge auewählen!" B-Value-Required="TRUE" B-Disallow-First-Item="TRUE" -->
+  <select size="1" class="form-control"  name="menge">
+  <option selected value="check">Menge ausw&auml;hlen!</option>
+  <option value="50-100kg">50 - 100 kg</option>
+  <option value="100-200kg">101 - 200 kg</option>
+  <option value="200-300kg">201 - 300 kg</option>
+  <option value="300-400kg">301 - 400 kg</option>
+  <option value="400-500kg">400 - 500 kg</option>
+  <option value="500-1000kg">501 - 1000 kg</option>
+  <option value="> 1000kg">mehr als 1000 kg</option>
+  <option value="---">---------------</option>
+  <option value="Beschreibung">nach Beschreibung</option>
+  </select>
+  <label for="floatingInput">Menge</label>
+             </div>
+    </div>
                                         
    <!-- ende menge-->   
-      
-      <div class="col-lg-10 col-md-10 col-12">
-        <input type="hidden" class="hidden" name="">
-        <button type="submit" class="form-control" style="background: #D77924;
-        border-radius: var(--border-radius-large);font-size:120%;
-        color: var(--white-color);
-        font-weight: var(--font-weight-bold);
-        transition: all 0.5s;
-        margin-bottom: 0;    padding-top: 13px;
-        padding-bottom: 13px; ">Weiter</button>
-      </div>
-                               
-                               
+
+                              </div>
+                              
+                               <input type="hidden" class="hidden" name="">
+                               <div class="col-lg-3 col-12 ms-auto">
+                                              <button type="submit" class="form-control" style="background: #D77924;
+      border-radius: var(--border-radius-large);font-size:120%;
+      color: var(--white-color);
+      font-weight: var(--font-weight-bold);
+      transition: all 0.5s;
+      margin-bottom: 0;    padding-top: 13px;
+      padding-bottom: 13px; ">Weiter</button>
+                                          </div>
   	</form>                           
-    </div>
-    <!-- ENDE OFFERTEFORMULAR -->
+                              </div>
+  <!-- ENDE OFFERTEFORMULAR -->
 
 
 
-    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-      <p>{{my_story_text}}</p>
-    </div>
+  <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                                  <p>{{my_story_text}}</p>
+                              </div>
                       
-        </div>
-    </div>
-</section>
+                      </div>
+                  </div>
+              </section>
 hero_section_antlr: |-
   <section class="hero d-flex justify-content-center align-items-center" id="section_1">
                   <div class="container">
@@ -427,7 +431,7 @@ service_template_section: |-
                           <div class="col-12 mx-auto">
                               <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
   	                         <h2 class="text-white me-4 mb-0">{{section_title}}</h2>
-                               {{assets:section_image}}
+     {{assets:section_image}}
                                   <img src="{{url}}" class="avatar-image img-fluid" alt="{{section_title}}">
                                  {{/assets:section_image}}
 
@@ -441,12 +445,9 @@ service_template_section: |-
                                           <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
                                               <h3 class="mb-0" title="{{service_title}}">{{service_title}}</h3>
 
-
                                               <!-- <div class="services-price-wrap ms-auto">
                                                   <p class="services-price-text mb-0">{{service_price}}</p>
-                                                  <div class="services-price-overlay">
-  {{assets:metalle_foto}}
-  <img src="{{assets:metalle_foto}}" class="projects-image img-fluid" alt=""></div>
+                                                  <div class="services-price-overlay"></div>
                                               </div> -->
                                           </div>
 
@@ -455,9 +456,6 @@ service_template_section: |-
                                           <a href="{{service_link}}" class="custom-btn custom-border-btn btn mt-3" title="{{service_text}}">{{link_text}}</a>
 
                                           <div class="services-icon-wrap d-flex justify-content-center align-items-center">
-
-
-
                                               <!--<i class="services-icon bi-{{service_icon}}"></i>-->
                                           </div>
                                       </div>
@@ -470,7 +468,6 @@ service_template_section: |-
    <div class="container">
   <div class="row">
   <p>{{metalle_text}}</p>
-
   </div>
   </div>
    </section>
@@ -486,8 +483,6 @@ services_offered:
     service_link: 'https://livuss.ch/kupfer-millberry/'
     link_text: 'Millberry Kupfer'
     service_icon: globe
-    metalle_foto:
-      - kupfer-millberry-1678479132.jpg
   -
     id: 6rAugZJG
     service_title: 'Kupfer blank'
@@ -496,8 +491,6 @@ services_offered:
     service_link: 'https://livuss.ch/kupfer-ankauf/'
     link_text: 'Kupfer verkaufen'
     service_icon: globe
-    metalle_foto:
-      - kupferblech-1678479152.jpg
   -
     id: ZD5bttRu
     service_title: Altkupfer
@@ -506,8 +499,6 @@ services_offered:
     link_text: 'Altkupfer Preise'
     service_icon: globe
     service_link: 'https://livuss.ch/altkupferpreis-schweiz/'
-    metalle_foto:
-      - altkupfer-1678479176.jpg
   -
     id: bRXcOico
     service_title: Kabel
@@ -516,8 +507,6 @@ services_offered:
     service_link: 'https://livuss.ch/kabel-entsorgen/'
     link_text: 'Kabel entsorgen'
     service_icon: globe
-    metalle_foto:
-      - kupferkabel_450-1678479194.jpg
 project_section_heading: Service
 project_section_image:
   - kupfer-1-1677155361.jpg
