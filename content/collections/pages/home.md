@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678553209
+updated_at: 1678553705
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:
@@ -191,10 +191,7 @@ story_section_antlr: |-
      </div>
                                         
    <!-- ende menge-->   
-
-                              </div>
-                              
-                               <input type="hidden" class="hidden" name="">
+  <input type="hidden" class="hidden" name="">
                                <div class="col-lg-3 col-12 ms-auto">
                                               <button type="submit" class="form-control" style="background: #D77924;
       border-radius: var(--border-radius-large);font-size:120%;
@@ -204,6 +201,9 @@ story_section_antlr: |-
       margin-bottom: 0;    padding-top: 13px;
       padding-bottom: 13px; ">Weiter</button>
                                           </div>
+                              </div>
+                              
+                               
   	</form>                           
                               </div>
   <!-- ENDE OFFERTEFORMULAR -->
