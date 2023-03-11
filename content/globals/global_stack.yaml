@@ -65,7 +65,7 @@ data:
                                         <ul class="footer-menu">
     	                                    
     	                                     {{ global_data:services }}
-                                            <li class="footer-menu-item"><a href="https://livuss.ch/index.html#templatemo-metalle" target="_blank" class="footer-menu-link">{{service_name}}</a></li>
+                                            <li class="footer-menu-item"><a href="{{service_link}}" target="_blank" class="footer-menu-link">{{service_name}}</a></li>
     										{{ /global_data:services }}
                                         </ul>
     <!-- ENDE WEITERE METALLE -->

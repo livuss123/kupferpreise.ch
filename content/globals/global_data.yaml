@@ -6,45 +6,56 @@ data:
     -
       id: legtvblo
       service_name: 'Kupfer Millberry'
+      service_link: 'https://livuss.ch/kupfer-millberry/'
     -
       id: legtw997
       service_name: 'Kupfer neu'
+      service_link: 'https://livuss.ch/kupfer-verkaufen/'
     -
       id: TfBYGrJp
       service_name: Altkupfer
+      service_link: 'https://livuss.ch/kupfer-verkaufen/'
     -
       id: NGuvIcB3
       service_name: Kabel
+      service_link: 'https://livuss.ch/kabel-entsorgen/'
     -
       id: kvVPEuPK
       service_name: Messing
+      service_link: 'https://livuss.ch/messing-verkaufen/'
     -
       id: leg6oshh
       service_name: Bronze
+      service_link: 'https://livuss.ch/bronze-verkaufen/'
     -
       id: leg6p0ev
       service_name: Zinn
+      service_link: 'https://livuss.ch/zinn-verkaufen/'
     -
       id: leg6p61y
       service_name: Blei
+      service_link: 'https://livuss.ch/blei-entsorgung/'
     -
       id: leg6pfby
       service_name: Edelstahl
+      service_link: 'https://livuss.ch/edelstahl-entsorgen/'
     -
       id: leg6pmgu
       service_name: Aluminium
+      service_link: 'https://livuss.ch/alu-entsorgen/'
     -
       id: leg6pt06
       service_name: Katalysatoren
+      service_link: 'https://livuss.ch/katalysator-verkaufen/'
     -
       id: legtx4je
       service_name: Altmetall
-  
+      service_link: 'https://livuss.ch/altmetall-entsorgen/'
   social_links:
     -
       id: 7PnOgA46
       social_media_name: Impressum
-      link_field: ''https://livuss.ch/impressum/'
+      link_field: 'https://livuss.ch/impressum/'
       icon_class: bi-twitter
       social_media_url: 'https://livuss.ch/impressum/'
       unsere_daten_text: Impressum
@@ -65,7 +76,7 @@ data:
     -
       id: 21KTg4wl
       social_media_name: Cookie
-      link_field: 'http://www.youtube.com'
+      link_field: 'https://livuss.ch/cookie/'
       icon_class: bi-youtube
       social_media_url: 'https://livuss.ch/cookie/'
       unsere_daten_text: Cookie
