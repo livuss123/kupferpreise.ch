@@ -1,7 +1,7 @@
 ---
 id: home
 blueprint: pages
-title: 'Kupferpreise | Kupfer Ankauf | Abholung Service'
+title: 'Kupferpreise | Kupferpreis Schweiz | Kupferpreise kg | Kupfer Preis'
 template: home
 author: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
 title_1: Gruezi!
@@ -12,7 +12,7 @@ small_image:
   - kupferblech-1677099677.jpg
   - kupferkabel_450-1677106265.jpg
 updated_by: c44ed6c5-a8f8-4447-85a2-a86c40027ed0
-updated_at: 1678606830
+updated_at: 1678607868
 story_heading: Offerte
 story_title: 'Holen Sie sich eine unverbindliche Offerte für Altmetall entsorgen ein, indem Sie das nachfolgende Formular ausfüllen und an uns senden.'
 my_image:

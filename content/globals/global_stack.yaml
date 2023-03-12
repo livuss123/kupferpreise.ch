@@ -9,7 +9,9 @@ data:
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <a href="/" class="navbar-brand mx-auto mx-lg-0" title="{{logo_title}}">{{global_data:logo_text}}</a>
+                    <a href="/" class="navbar-brand mx-auto mx-lg-0" title="{{logo_title}}">{{global_data:logo_text}}
+    <p class="logotext-powered">{{global_data:powered_by}}</p>
+    </a>
 
                     <div class="d-flex align-items-center d-lg-none">
                         <i class="navbar-icon bi-telephone-plus me-3" alt="Sofort-Kontakt mit Schrotthändler"></i>

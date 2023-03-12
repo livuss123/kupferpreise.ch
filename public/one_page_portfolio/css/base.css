@@ -66,6 +66,11 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
 }
+.logotext-powered {
+  color: #cccccc;
+  font-size: 12px;
+  font-weight: var(--font-weight-normal);
+}
 .cookis-footer {color:#333333; font-size: 12px; padding-left:15px; pading-right:15px;}
 
 ul li {
@@ -476,7 +481,7 @@ strong {
 
 .hero-image-wrap {
   /*background: var(--white-color);*/
-  background: url('../../assets/altkupfer_450.jpg');
+  background: url('../../assets/altkupfer-gross.jpg') no-repeat center center;
   border-radius: 100%;
   width: 350px;
   height: 350px;

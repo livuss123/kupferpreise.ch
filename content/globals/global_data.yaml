@@ -1,6 +1,6 @@
 title: 'Global Data'
 data:
-  logo_text: kupferpreise
+  logo_text: kupferpreise.ch
   phone_number: '079 560 40 99'
   services:
     -
@@ -86,3 +86,4 @@ data:
   telefon_title: 'Kontakt mit Altmetallhändelr'
   logo_title: 'Altmetallhändler | Schrotthändler'
   cooki_text: '<b>Cooki Erklärung</b> | Wir verwenden Cookies, um zu verstehen, wie Menschen unsere Website nutzen. Durch die Nutzung unserer Website erklären Sie sich mit der Verwendung von Cookies einverstanden. Weitere Informationen finden Sie in unsere <a href="https://livuss.ch/cookie/" target="_blank">Datenschutzbestimmungen</a>.'
+  powered_by: 'Powered by Livuss GmbH'
