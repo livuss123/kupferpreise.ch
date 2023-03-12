@@ -1,0 +1,10 @@
+export_paths:
+  - content
+  - resources/blueprints
+  - resources/fieldsets
+  - resources/forms
+  - resources/views
+  - public/one_page_portfolio/fonts
+  - public/one_page_portfolio/css
+  - public/one_page_portfolio/js
+  - public/assets

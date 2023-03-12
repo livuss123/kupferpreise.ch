@@ -1,0 +1,70 @@
+title: 'Companies Worked'
+fields:
+  -
+    handle: company_section_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Section Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: company_logos
+    field:
+      fields:
+        -
+          handle: company_logo
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: company_logo
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+      mode: table
+      reorderable: true
+      display: company_logos
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: companies_worked_section
+    field:
+      antlers: true
+      display: 'Companies worked Section'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      default: |-
+        <section class="clients section-padding">
+                        <div class="container">
+                            <div class="row align-items-center">
+
+                                <div class="col-lg-12 col-12">
+                                    <h3 class="text-center mb-5">{{company_section_title}}</h3>
+                                </div>
+                                
+                                {{company_logos}}
+        						{{assets:company_logo}}
+                                <div class="col-lg-2 col-4 ms-auto clients-item-height">
+                                    <img src="{{url}}" class="clients-image img-fluid" alt="">
+                                </div>
+                                {{/assets:company_logo}}
+
+                                {{/company_logos}}
+
+                            </div>
+                        </div>
+                    </section>

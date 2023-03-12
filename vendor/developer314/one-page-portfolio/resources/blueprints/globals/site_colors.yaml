@@ -1,0 +1,368 @@
+sections:
+  main:
+    display: Colors
+    fields:
+      -
+        handle: primary_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Primary Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: secondary_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Secondary Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: section_bg_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Section Bg Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: paragraph_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Paragraph Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: border_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Border Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: white_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'White Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: dark_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Dark Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: featured_border_color
+        field:
+          theme: classic
+          lock_opacity: false
+          default_color_mode: HEXA
+          color_modes:
+            - hex
+          display: 'Featured Border Color'
+          type: color
+          icon: color
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  fonts:
+    display: Fonts
+    fields:
+      -
+        handle: font_urls
+        field:
+          fields:
+            -
+              handle: font_url
+              field:
+                input_type: text
+                antlers: false
+                display: 'Font Url'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+          mode: stacked
+          reorderable: true
+          display: 'Font Urls'
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: body_font_family
+        field:
+          input_type: text
+          antlers: false
+          display: 'Body Font Family'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  font_size:
+    display: 'Font Size'
+    fields:
+      -
+        handle: h1_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'H1 Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: h2_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'H2 Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: h3_font_size
+        field:
+          input_type: text
+          antlers: false
+          display: 'H3 Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: h4_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'H4 Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: h5_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'H5 Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: h6_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'H6 Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: paragraph_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'Paragraph Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: menu_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'Menu Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: copyright_font_size
+        field:
+          input_type: number
+          antlers: false
+          display: 'Copyright Font Size'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: border_radius_large
+        field:
+          input_type: number
+          antlers: false
+          display: 'Border Radius Large'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: border_radius_medium
+        field:
+          input_type: number
+          antlers: false
+          display: 'Border Radius Medium'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: border_radius_small
+        field:
+          input_type: number
+          antlers: false
+          display: 'Border Radius Small'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: font_weight_normal
+        field:
+          input_type: number
+          antlers: false
+          display: 'Font Weight Normal'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: font_weight_medium
+        field:
+          input_type: number
+          antlers: false
+          display: 'Font Weight Medium'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: font_weight_bold
+        field:
+          input_type: number
+          antlers: false
+          display: 'Font Weight Bold'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  template:
+    display: Template
+    fields:
+      -
+        handle: site_color_fonts_header
+        field:
+          antlers: true
+          default: |-
+            <style>
+            	        :root {
+              --white-color:                  {{site_colors:white_color}};
+              --primary-color:                {{site_colors:primary_color}};
+              --secondary-color:              {{site_colors:secondary_color}};
+              --section-bg-color:             {{site_colors:section_bg_color}};
+              --dark-color:                   {{site_colors:dark_color}};
+              --p-color:                      {{site_colors:paragraph_color}};
+              --border-color:                 {{site_colors:border_color}};
+              --featured-border-color:        {{site_colors:featured_border_color}};
+
+              --body-font-family:             {{site_colors:body_font_family}};
+
+              --h1-font-size:                 62px;
+              --h2-font-size:                 48px;
+              --h3-font-size:                 36px;
+              --h4-font-size:                 32px;
+              --h5-font-size:                 24px;
+              --h6-font-size:                 22px;
+              --p-font-size:                  18px;
+              --menu-font-size:               12px;
+              --copyright-font-size:          14px;
+
+              --border-radius-large:          100px;
+              --border-radius-medium:         20px;
+              --border-radius-small:          10px;
+
+              --font-weight-normal:           400;
+              --font-weight-medium:           500;
+              --font-weight-bold:             700;
+            }
+
+            	 </style>
+          display: 'Site Color Fonts Header'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible

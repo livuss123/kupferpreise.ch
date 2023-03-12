@@ -1,0 +1,90 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
+        handle: sections
+        field:
+          antlers: true
+          default: |-
+            {{hero_section_antlr}}
+            {{information_section_template}}
+            {{story_section_antlr}}
+            {{companies_worked_section}}
+            {{service_template_section}}
+            {{project_section_template}}
+          display: Sections
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  home_hero:
+    display: Hero
+    fields:
+      -
+        import: home_hero
+  my_story:
+    display: Story
+    fields:
+      -
+        import: my_story
+  information:
+    display: Information
+    fields:
+      -
+        import: information
+  company_logos:
+    display: Company
+    fields:
+      -
+        import: companies_worked
+  services:
+    display: Services
+    fields:
+      -
+        import: services
+  projects:
+    display: Projects
+    fields:
+      -
+        import: projects

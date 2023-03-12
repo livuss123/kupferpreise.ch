@@ -1,0 +1,139 @@
+title: Projects
+fields:
+  -
+    handle: project_section_heading
+    field:
+      input_type: text
+      antlers: false
+      display: 'Project Section Heading'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: project_section_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Project Section Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: completed_projects
+    field:
+      fields:
+        -
+          handle: project_category
+          field:
+            input_type: text
+            antlers: false
+            display: 'Project category'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: client_name
+          field:
+            input_type: text
+            antlers: false
+            display: 'Client Name'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: client_text
+          field:
+            input_type: text
+            antlers: false
+            display: 'Text'
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+        -
+          handle: project_image
+          field:
+            mode: list
+            container: assets
+            restrict: false
+            allow_uploads: true
+            show_filename: true
+            display: 'Project Image'
+            type: assets
+            icon: assets
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+      mode: stacked
+      reorderable: true
+      display: 'Completed Projects'
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: project_section_template
+    field:
+      antlers: true
+      default: |-
+        <section class="projects section-padding" id="section_4">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                                    <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+        	                            {{assets:project_section_image}}
+                                        <img src="{{url}}" class="avatar-image img-fluid" alt="">
+                                        {{assets:project_section_image}}
+
+                                        <h2 class="text-white ms-4 mb-0">{{project_section_heading}}</h2>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+        						
+        						{{completed_projects}}
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">{{project_category}}</small>
+
+                                            <h3 class="projects-title">{{client_name}}</h3>
+                                             <h6 class="projects-title">{{client_text}}</h6>
+                                        </div>
+                                        
+                                        {{assets:project_image}}
+
+                                        <a href="{{url}}" class="popup-image">
+                                            <img src="{{url}}" class="projects-image img-fluid" alt="">
+                                        </a>
+                                        {{/project_image}}
+                                    </div>
+                                </div>
+                                
+                                {{/completed_projects}}
+
+                               
+
+                            </div>
+                        </div>
+                    </section>
+      display: 'Project Section Template'
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible

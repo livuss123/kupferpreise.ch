@@ -1,0 +1,57 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: Name
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: services_needed
+        field:
+          inline: false
+          options:
+            Website: Website
+            Branding: Branding
+            Ecommerce: Ecommerce
+            SEO: SEO
+          display: 'Services Looking for'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: tell_me_about_the_project
+        field:
+          antlers: false
+          display: 'Tell me about the project'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required

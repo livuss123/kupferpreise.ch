@@ -1,0 +1,67 @@
+title: 'Site Colors'
+data:
+  primary_color: '#535DA1'
+  secondary_color: '#14B789'
+  section_bg_color: '#F9F9F9'
+  paragraph_color: '#717275'
+  border_color: '#E9EAEB'
+  white_color: '#FFFFFF'
+  dark_color: '#000000'
+  featured_border_color: '#727AAB'
+  font_urls:
+    -
+      font_url: 'https://fonts.googleapis.com/'
+    -
+      font_url: 'https://fonts.gstatic.com/'
+    -
+      font_url: 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap'
+  body_font_family: "'DM Sans', sans-serif"
+  h1_font_size: 62
+  h2_font_size: 48
+  h3_font_size: '36'
+  h4_font_size: 32
+  h5_font_size: 24
+  h6_font_size: 22
+  paragraph_font_size: 18
+  menu_font_size: 12
+  copyright_font_size: 14
+  border_radius_large: 100
+  border_radius_medium: 20
+  border_radius_small: 10
+  font_weight_normal: 400
+  font_weight_medium: 500
+  font_weight_bold: 700
+  site_color_fonts_header: |-
+    <style> 
+    	        :root {
+      --white-color:                  {{site_colors:white_color}};
+      --primary-color:                {{site_colors:primary_color}};
+      --secondary-color:              {{site_colors:secondary_color}};
+      --section-bg-color:             {{site_colors:section_bg_color}};
+      --dark-color:                   {{site_colors:dark_color}};
+      --p-color:                      {{site_colors:paragraph_color}};
+      --border-color:                 {{site_colors:border_color}};
+      --featured-border-color:        {{site_colors:featured_border_color}};
+
+      --body-font-family:             {{site_colors:body_font_family}};
+
+      --h1-font-size:                 {{site_colors:h1_font_size}}px;
+      --h2-font-size:                 {{site_colors:h2_font_size}}px;
+      --h3-font-size:                 {{site_colors:h3_font_size}}px;
+      --h4-font-size:                 {{site_colors:h4_font_size}}px;
+      --h5-font-size:                 {{site_colors:h5_font_size}}px;
+      --h6-font-size:                 {{site_colors:h6_font_size}}px;
+      --p-font-size:                  {{site_colors:paragraph_font_size}}px;
+      --menu-font-size:               {{site_colors:menu_font_size}}px;
+      --copyright-font-size:          {{site_colors:copyright_font_size}}px;
+
+      --border-radius-large:          {{site_colors:border_radius_large}}px;
+      --border-radius-medium:         {{site_colors:border_radius_medium}}px;
+      --border-radius-small:          {{site_colors:border_radius_small}}px;
+
+      --font-weight-normal:           {{site_colors:font_weight_normal}};
+      --font-weight-medium:           {{site_colors:font_weight_medium}};
+      --font-weight-bold:             {{site_colors:font_weight_bold}};
+    }
+
+    	 </style>

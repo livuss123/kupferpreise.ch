@@ -1,0 +1,35 @@
+title: 'Global Data'
+data:
+  logo_text: '314 Digital'
+  phone_number: '918907289865'
+  services:
+    -
+      service_name: 'Web Development'
+    -
+      service_name: 'Statamic CMS'
+    -
+      service_name: 'Gatsby JS'
+  social_links:
+    -
+      social_media_name: Twitter
+      link_field: 'http://www.twitter.com'
+      icon_class: bi-twitter
+      social_media_url: 'http://www.twitter.com'
+    -
+      social_media_name: Instagram
+      link_field: 'http://www.instagram.com'
+      icon_class: bi-instagram
+      social_media_url: 'http://www.instagram.com'
+    -
+      social_media_name: Pinterest
+      link_field: 'http://www.pinterest.com'
+      icon_class: bi-pinterest
+      social_media_url: 'http://www.pinterest.com'
+    -
+      social_media_name: Youtube
+      link_field: 'http://www.youtube.com'
+      icon_class: bi-youtube
+      social_media_url: 'http://www.youtube.com'
+  about_text: 'About Me'
+  about_description: 'Revolve 314 Digital is a professional web developer. Feel free to get in touch with me.'
+  email_address: manup.rav@gmail.com

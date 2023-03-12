@@ -1,0 +1,110 @@
+title: 'My Story'
+fields:
+  -
+    handle: story_big_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'Story Big Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: story_heading
+    field:
+      input_type: text
+      antlers: false
+      display: 'Story Heading'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: story_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Story Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: my_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      display: 'My Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: my_story_text
+    field:
+      restrict: false
+      automatic_line_breaks: true
+      automatic_links: false
+      escape_markup: false
+      smartypants: false
+      antlers: false
+      display: 'My Story Text'
+      type: markdown
+      icon: markdown
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: story_section_antlr
+    field:
+      antlers: true
+      default: |-
+        <section class="about section-padding" id="section_2">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-6 col-12">
+        	                        
+        	                        
+        	                        {{ assets:story_big_image }}
+                                    <img src="{{url}}" class="about-image img-fluid" alt="">
+                                    {{ /assets:story_big_image }}
+                                </div>
+
+                                <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                                    <div class="about-thumb">
+
+                                        <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+                                            <h2 class="text-white me-4 mb-0">{{story_heading}}</h2>
+                                             {{ assets:my_image }}
+
+                                            <img src="{{url}}" class="avatar-image img-fluid" alt="">
+                                             {{ /assets:my_image }}
+                                        </div>
+
+                                        <h3 class="pt-2 mb-3">{{story_title}}</h3>
+
+                                        {{my_story_text}}
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+      display: story_section_antlr
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
