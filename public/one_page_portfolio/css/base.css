@@ -894,6 +894,7 @@ strong {
   list-style: none;
   display: inline-block;
   vertical-align: top;
+  width: 100%;
 }
 
 .footer-menu-link {
@@ -907,7 +908,7 @@ strong {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 6px 14px;
-  min-width: 70px;
+  width: 100%;
 }
 
 .footer-menu-link:hover {

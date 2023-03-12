@@ -69,26 +69,12 @@ data:
     										{{ /global_data:services }}
                                         </ul>
     <!-- ENDE WEITERE METALLE -->
-    <!-- UNSERE DATEN -->
-                                        <strong class="site-footer-title d-block mt-4 mb-3">UNSERE DATEN</strong>
 
-                                        <ul class="footer-menu">
-                                           
-                                           
-                                            {{ global_data:social_links }}
-                                           
-                                            <li class="footer-menu-item"><a href="{{ social_media_url }}" target="_blank" title="{{ social_media_name }}" class="footer-menu-link ">{{ unsere_daten_text }}</a></li>
-
-    										 {{ /global_data:social_links }}
-    										
-    											
-                                           
-                                        </ul>
                                        
                                     </div>
                                 </div> 
 
-    <!-- ENDE UNSERE DATEN -->
+
     <!-- FIRMA DATEN -->
                                 <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
                                     <div class="contact-info d-flex flex-column">
@@ -113,6 +99,24 @@ data:
                                                 {{global_data:phone_number}}
                                             </a>
                                         </p>
+
+     <!-- UNSERE DATEN -->
+                                        <strong class="site-footer-title d-block mt-4 mb-3">UNSERE DATEN</strong>
+
+                                        <ul class="footer-menu">
+                                           
+                                           
+                                            {{ global_data:social_links }}
+                                           
+                                            <li class="footer-menu-item"><a href="{{ social_media_url }}" target="_blank" title="{{ social_media_name }}" class="footer-menu-link ">{{ unsere_daten_text }}</a></li>
+
+    										 {{ /global_data:social_links }}
+    										
+    											
+                                           
+                                        </ul>
+    <!-- ENDE UNSERE DATEN -->
+
                                     </div>
                                 </div>
     <!-- ENDE FIRMA DATEN -->

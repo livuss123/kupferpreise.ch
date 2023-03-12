@@ -157,7 +157,7 @@ fields:
 
                                                 <p>{{service_text}}</p>
 
-                                                <a href="{{service_link}}" class="custom-btn custom-border-btn btn mt-3">{{link_text}}</a>
+                                                <a href="{{service_link}}" class="custom-btn custom-border-btn btn mt-3" target="_blank">{{link_text}}</a>
 
                                                 <div class="services-icon-wrap d-flex justify-content-center align-items-center">
 
