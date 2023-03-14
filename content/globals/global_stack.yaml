@@ -59,69 +59,9 @@ data:
                                 </div>
 
                                 <div class="clearfix"></div>
-    <!-- WEITERE METALLE -->
-                                <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
-                                    <div class="contact-info contact-info-border-start d-flex flex-column">
-                                        <strong class="site-footer-title d-block mb-3">weitere Metalle</strong>
-
-                                        <ul class="footer-menu">
-    	                                    
-    	                                     {{ global_data:services }}
-                                            <li class="footer-menu-item"><a href="{{service_link}}" target="_blank" class="footer-menu-link">{{service_name}}</a></li>
-    										{{ /global_data:services }}
-                                        </ul>
-    <!-- ENDE WEITERE METALLE -->
-
-                                       
-                                    </div>
-                                </div> 
 
 
-    <!-- FIRMA DATEN -->
-                                <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
-                                    <div class="contact-info d-flex flex-column">
-                                        <strong class="site-footer-title d-block mb-3"> {{global_data:about_text}}</strong>
 
-                                        <p class="mb-2">
-                                             {{global_data:about_description}}
-                                  </p>
-
-                                        <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
-
-                                        <p>
-                                            <a href="mailto:{{global_data:email_address}}">
-                                                {{global_data:email_address}}
-                                            </a>
-                                        </p>
-
-                                        <strong class="site-footer-title d-block mt-4 mb-3">Sofort-Kontakt</strong>
-
-                                        <p class="mb-0">
-                                            <a href="tel: {{global_data:phone_number}}">
-                                                {{global_data:phone_number}}
-                                            </a>
-                                        </p>
-
-     <!-- UNSERE DATEN -->
-                                        <strong class="site-footer-title d-block mt-4 mb-3">UNSERE DATEN</strong>
-
-                                        <ul class="footer-menu">
-                                           
-                                           
-                                            {{ global_data:social_links }}
-                                           
-                                            <li class="footer-menu-item"><a href="{{ social_media_url }}" target="_blank" title="{{ social_media_name }}" class="footer-menu-link ">{{ unsere_daten_text }}</a></li>
-
-    										 {{ /global_data:social_links }}
-    										
-    											
-                                           
-                                        </ul>
-    <!-- ENDE UNSERE DATEN -->
-
-                                    </div>
-                                </div>
-    <!-- ENDE FIRMA DATEN -->
     <!-- KONTAKTFORMULAR -->
     <div class="col-lg-6 col-12 mt-5 mt-lg-0">
     	<h6>Kontaktieren Sie mit uns</h6>                            
@@ -230,4 +170,66 @@ data:
                                 
                                 </div>
     <!-- ENDE KONTAKTFORMULAR -->
+    <!-- FIRMA DATEN -->
+                                <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                                    <div class="contact-info d-flex flex-column">
+                                        <strong class="site-footer-title d-block mb-3"> {{global_data:about_text}}</strong>
+
+                                        <p class="mb-2">
+                                             {{global_data:about_description}}
+                                  </p>
+
+                                        <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
+
+                                        <p>
+                                            <a href="mailto:{{global_data:email_address}}">
+                                                {{global_data:email_address}}
+                                            </a>
+                                        </p>
+
+                                        <strong class="site-footer-title d-block mt-4 mb-3">Sofort-Kontakt</strong>
+
+                                        <p class="mb-0">
+                                            <a href="tel: {{global_data:phone_number}}">
+                                                {{global_data:phone_number}}
+                                            </a>
+                                        </p>
+
+     <!-- UNSERE DATEN -->
+                                        <strong class="site-footer-title d-block mt-4 mb-3">UNSERE DATEN</strong>
+
+                                        <ul class="footer-menu">
+                                           
+                                           
+                                            {{ global_data:social_links }}
+                                           
+                                            <li class="footer-menu-item"><a href="{{ social_media_url }}" target="_blank" title="{{ social_media_name }}" class="footer-menu-link ">{{ unsere_daten_text }}</a></li>
+
+    										 {{ /global_data:social_links }}
+    										
+    											
+                                           
+                                        </ul>
+    <!-- ENDE UNSERE DATEN -->
+
+                                    </div>
+                                </div>
+    <!-- ENDE FIRMA DATEN -->
+    <!-- WEITERE METALLE -->
+                                <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                                    <div class="contact-info contact-info-border-start d-flex flex-column">
+                                        <strong class="site-footer-title d-block mb-3">weitere Metalle</strong>
+
+                                        <ul class="footer-menu">
+    	                                    
+    	                                     {{ global_data:services }}
+                                            <li class="footer-menu-item"><a href="{{service_link}}" target="_blank" class="footer-menu-link">{{service_name}}</a></li>
+    										{{ /global_data:services }}
+                                        </ul>
+
+
+                                       
+                                    </div>
+                                </div> 
+    <!-- ENDE WEITERE METALLE -->
   footer_credit: '<span class="copyright-text">Copyright © 2018 <a href="https://www.livuss.ch">Powered by Livuss</a> GmbH. All rights reserved.</span>Design: <a rel="sponsored" href="https://www.livuss.ch" target="_blank">Livuss</a>'
